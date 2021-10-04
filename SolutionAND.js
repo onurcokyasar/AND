@@ -28,7 +28,7 @@ function solution (input) {
   // If input string is not a single character, continue function and for each char in string
   for(let i = 0; i < input.length; i++) {
     
-    // Define permutation as a char of the input string and set permutation recursively call function
+    // Define permutate as a char of the input string and set permutate to recursively call function
     let initialCharacter = input[i];
     let charactersLeft = input.substring(0, i) + input.substring(i + 1);
     let permutate = solution(charactersLeft);
