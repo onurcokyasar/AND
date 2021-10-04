@@ -31,13 +31,13 @@ function solution (input) {
     // Define permutation as a char of the input string and set permutation recursively call function
     let initialCharacter = input[i];
     let charactersLeft = input.substring(0, i) + input.substring(i + 1);
-    let permute = solution(charactersLeft);
+    let permutate = solution(charactersLeft);
 
     // For each string to permute
-    for(let j = 0; j < permute.length; j++) {
+    for(let j = 0; j < permutate.length; j++) {
       
-      // Add defined char and permuted char
-      result.push(initialCharacter + permute[j]);
+      // Add defined char and permutate char
+      result.push(initialCharacter + permutate[j]);
     }
   }
 
